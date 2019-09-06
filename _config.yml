@@ -1,6 +1,5 @@
 title: Hans5958's Redirection Service
 description: This is a redirect website.
-baseurl: "/jekyll"
 url: "/"
 destination: public
 markdown: kramdown
