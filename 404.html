@@ -8,13 +8,7 @@
 
 <script>
 
-var redirect
-
-if (window.location.host === "127.0.0.1:4000") {
-	redirect = window.location.pathname
-} else {
-	redirect = window.location.pathname.slice(11)
-}
+var redirect = window.location.pathname
 
 if (redirect[1] + redirect[2] === "r/") {
 	window.location.href = "https://hans5958.github.io/404"
@@ -22,6 +16,14 @@ if (redirect[1] + redirect[2] === "r/") {
 	window.location.href = "https://hans5958.github.io" + redirect
 }
 
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-49890594-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-49890594-5');
 </script>
 
 </head>
